@@ -8,11 +8,11 @@
 /*  overflow: hidden;*/
 /*}*/
 .heart {
-  position: absolute;
+  position: fixed;
+  left : 50px;
   width: 100px;
   height: 90px;
   top: 50%;
-  left: 50%;
   margin-top: -45px;
   margin-left: -50px;
      animation: pounding .5s linear infinite alternate;
@@ -20,7 +20,8 @@
 }
 .heart:before,
 .heart:after {
-  position: absolute;
+  position: fixed;
+  left:0px;
   content: "";
   left: 50px;
   top: 0;
