@@ -7,7 +7,7 @@
 /*  min-height: 500px;*/
 /*  overflow: hidden;*/
 /*}*/
-.heart {
+.heart1 {
   position: fixed;
   left : 50px;
   width: 100px;
@@ -15,11 +15,11 @@
   top: 50%;
   margin-top: -45px;
   margin-left: -50px;
-     animation: pounding .5s linear infinite alternate;
+   animation: heart-anim 1s linear .4s infinite;
 
 }
-.heart:before,
-.heart:after {
+.heart1:before,
+.heart1:after {
   position: fixed;
   left:0px;
   content: "";
@@ -32,20 +32,54 @@
   transform: rotate(-45deg);
   transform-origin: 0 100%;
 }
-.heart:after {
+.heart1:after {
   left: 0;
   transform: rotate(45deg);
   transform-origin :100% 100%;
 }
-.heart1{
-   animation: heart-anim 1s linear .4s infinite;
-}
-.heart2{
-   animation: pounding .5s linear infinite alternate;
-}
 .heart1:after, .heart1:before{
   background-color: #ff7693;
 }
+
+
+
+
+
+.heart2 {
+  position: fixed;
+  left : 50px;
+  width: 100px;
+  height: 90px;
+  top: 50%;
+  margin-top: -45px;
+  margin-left: -50px;
+
+}
+.heart2:before,
+.heart2:after {
+  position: fixed;
+  left:0px;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: #fc2e5a;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.heart2:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin :100% 100%;
+}
+
+.heart2{
+   animation: pounding .5s linear infinite alternate;
+}
+
+
 
 @keyframes pounding{
   0%{ transform: scale(1.5); }
