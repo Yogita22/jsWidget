@@ -1,12 +1,12 @@
 /* Styles go here */
 
-html, body{
-  width: 100%;
-  height: 100%;
-  min-width: 500px;
-  min-height: 500px;
-  overflow: hidden;
-}
+/*html, body{*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  min-width: 500px;*/
+/*  min-height: 500px;*/
+/*  overflow: hidden;*/
+/*}*/
 .heart {
   position: absolute;
   width: 100px;
@@ -15,6 +15,8 @@ html, body{
   left: 50%;
   margin-top: -45px;
   margin-left: -50px;
+     animation: pounding .5s linear infinite alternate;
+
 }
 .heart:before,
 .heart:after {
